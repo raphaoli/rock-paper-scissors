@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	font-weight: 200;
+}
+
+body {
+	background-color: #141617;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	width: 100vw;
+}
+
+/* TOP CONTENT */
+
+.header {
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*  MAIN CONTENT */
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	margin-top: 2%;
+}
+
+.choices {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5rem;
+}
+
+.choice-name {
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+
+.info-text {
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.btn-rules {
+	font-size: 1rem;
+	border: none;
+	background-color: #141617;
+	color: #fff;
+	height: 2rem;
+	width: 4rem;
+	align-self: flex-end;
+	margin: 0 1rem -6rem 0;
+	border: 1px outset rgba(0, 0, 0, 0);
+	box-shadow: 1px transparent;
+	border-radius: 0.5rem;
+}
+
+.image {
+	height: 15rem;
+	width: 15rem;
+	transition: 0.5s all ease-in-out;
+}
+
+.image:hover {
+	transform: scale(1.2);
+}
+
+.el {
+	padding: 1rem;
+	border: 1px outset rgba(0, 0, 0, 0);
+	box-shadow: 1px transparent;
+	border-radius: 0.5rem;
+}
+
+.el:hover,
+.btn-rules:hover {
+	border-color: #fff;
+	border-style: outset;
+	box-shadow: 1px 1px 1px outset #fff;
+	border-radius: 0.5rem;
+}
+
+.scores {
+	display: flex;
+	gap: 1rem;
+	text-align: center;
+	font-size: 1rem;
+	padding: 0 1rem;
+	width: 10rem;
+}
+
+.name {
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px outset #fff;
+}
+
+/* FOOTER */
+
+.copyright {
+	text-align: center;
+	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
+}
+
+/* MODAL */
+
+.modal-rules {
+	/* display: none; */
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 1000;
+}
+
+.modal-content {
+	border-radius: 10px;
+	height: 20rem;
+	width: 40rem;
+	padding: 30px;
+	margin: 15% auto;
+	background-color: #272a2c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4rem;
+}
+
+.modal-close {
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	border: none;
+	height: 2rem;
+	width: 2rem;
+	font-size: 2rem;
+	align-self: flex-end;
+	margin-right: 0.2rem;
+	position: relative;
+	top: -1.5rem;
+	right: -1.5rem;
+}
